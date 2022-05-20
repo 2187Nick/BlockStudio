@@ -1,0 +1,1138 @@
+{
+    "contractName": "BlockAudio",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "getAudioMessage",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getAudioMessage1",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getMp3Audio",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_voicemail",
+                    "type": "string"
+                }
+            ],
+            "name": "setAudioMessage",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_voicemail",
+                    "type": "string"
+                }
+            ],
+            "name": "setAudioMessage1",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_audio",
+                    "type": "string"
+                }
+            ],
+            "name": "setMp3Audio",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getAudioMessage\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAudioMessage1\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getMp3Audio\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_voicemail\",\"type\":\"string\"}],\"name\":\"setAudioMessage\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_voicemail\",\"type\":\"string\"}],\"name\":\"setAudioMessage1\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_audio\",\"type\":\"string\"}],\"name\":\"setMp3Audio\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/m/blockaudio/packages/hardhat/contracts/BlockAudio.sol\":\"BlockAudio\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/m/blockaudio/packages/hardhat/contracts/BlockAudio.sol\":{\"keccak256\":\"0x09e2122104beea5d0bc03032178a9fb540b132cd867ac83706ea12c7bad24cc0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://af836c4e5aee8ffc5a4c7aef7058892d1083f68f14e47b4d3061c96a0a9a6798\",\"dweb:/ipfs/QmcuNEuHVCxFHASkBixAAqhAsXDsaak2KSEZNMxyGLchD6\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b506104e6806100206000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c8063288dca9d14610067578063471634ed1461007c578063899fe70d1461008f5780639031f9d5146100a2578063b3c6821f146100c0578063c5112994146100c8575b600080fd5b61007a6100753660046102bc565b6100d0565b005b61007a61008a3660046102bc565b610109565b61007a61009d3660046102bc565b61013e565b6100aa610173565b6040516100b791906103fc565b60405180910390f35b6100aa610205565b6100aa610214565b806040516020016100e191906103be565b60405160208183030381529060405260029080519060200190610105929190610223565b5050565b8060405160200161011a919061036d565b60405160208183030381529060405260019080519060200190610105929190610223565b8060405160200161014f919061036d565b60405160208183030381529060405260009080519060200190610105929190610223565b6060600180546101829061045f565b80601f01602080910402602001604051908101604052809291908181526020018280546101ae9061045f565b80156101fb5780601f106101d0576101008083540402835291602001916101fb565b820191906000526020600020905b8154815290600101906020018083116101de57829003601f168201915b5050505050905090565b6060600080546101829061045f565b6060600280546101829061045f565b82805461022f9061045f565b90600052602060002090601f0160209004810192826102515760008555610297565b82601f1061026a57805160ff1916838001178555610297565b82800160010185558215610297579182015b8281111561029757825182559160200191906001019061027c565b506102a39291506102a7565b5090565b5b808211156102a357600081556001016102a8565b6000602082840312156102ce57600080fd5b813567ffffffffffffffff808211156102e657600080fd5b818401915084601f8301126102fa57600080fd5b81358181111561030c5761030c61049a565b604051601f8201601f19908116603f011681019083821181831017156103345761033461049a565b8160405282815287602084870101111561034d57600080fd5b826020860160208301376000928101602001929092525095945050505050565b7f646174613a617564696f2f7765626d3b636f646563733d6f7075733b626173658152620d8d0b60ea1b6020820152600082516103b181602385016020870161042f565b9190910160230192915050565b7519185d184e985d591a5bcbdb5c0cced8985cd94d8d0b60521b8152600082516103ef81601685016020870161042f565b9190910160160192915050565b602081526000825180602084015261041b81604085016020870161042f565b601f01601f19169190910160400192915050565b60005b8381101561044a578181015183820152602001610432565b83811115610459576000848401525b50505050565b600181811c9082168061047357607f821691505b6020821081141561049457634e487b7160e01b600052602260045260246000fd5b50919050565b634e487b7160e01b600052604160045260246000fdfea2646970667358221220d07e9f90627a246e431978800e4e1833802a327f5646023e9b3a103e70c9ca6f64736f6c63430008070033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100625760003560e01c8063288dca9d14610067578063471634ed1461007c578063899fe70d1461008f5780639031f9d5146100a2578063b3c6821f146100c0578063c5112994146100c8575b600080fd5b61007a6100753660046102bc565b6100d0565b005b61007a61008a3660046102bc565b610109565b61007a61009d3660046102bc565b61013e565b6100aa610173565b6040516100b791906103fc565b60405180910390f35b6100aa610205565b6100aa610214565b806040516020016100e191906103be565b60405160208183030381529060405260029080519060200190610105929190610223565b5050565b8060405160200161011a919061036d565b60405160208183030381529060405260019080519060200190610105929190610223565b8060405160200161014f919061036d565b60405160208183030381529060405260009080519060200190610105929190610223565b6060600180546101829061045f565b80601f01602080910402602001604051908101604052809291908181526020018280546101ae9061045f565b80156101fb5780601f106101d0576101008083540402835291602001916101fb565b820191906000526020600020905b8154815290600101906020018083116101de57829003601f168201915b5050505050905090565b6060600080546101829061045f565b6060600280546101829061045f565b82805461022f9061045f565b90600052602060002090601f0160209004810192826102515760008555610297565b82601f1061026a57805160ff1916838001178555610297565b82800160010185558215610297579182015b8281111561029757825182559160200191906001019061027c565b506102a39291506102a7565b5090565b5b808211156102a357600081556001016102a8565b6000602082840312156102ce57600080fd5b813567ffffffffffffffff808211156102e657600080fd5b818401915084601f8301126102fa57600080fd5b81358181111561030c5761030c61049a565b604051601f8201601f19908116603f011681019083821181831017156103345761033461049a565b8160405282815287602084870101111561034d57600080fd5b826020860160208301376000928101602001929092525095945050505050565b7f646174613a617564696f2f7765626d3b636f646563733d6f7075733b626173658152620d8d0b60ea1b6020820152600082516103b181602385016020870161042f565b9190910160230192915050565b7519185d184e985d591a5bcbdb5c0cced8985cd94d8d0b60521b8152600082516103ef81601685016020870161042f565b9190910160160192915050565b602081526000825180602084015261041b81604085016020870161042f565b601f01601f19169190910160400192915050565b60005b8381101561044a578181015183820152602001610432565b83811115610459576000848401525b50505050565b600181811c9082168061047357607f821691505b6020821081141561049457634e487b7160e01b600052602260045260246000fd5b50919050565b634e487b7160e01b600052604160045260246000fdfea2646970667358221220d07e9f90627a246e431978800e4e1833802a327f5646023e9b3a103e70c9ca6f64736f6c63430008070033",
+    "sourceMap": "96:961:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "96:961:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;822:132;;;;;;:::i;:::-;;:::i;:::-;;552:159;;;;;;:::i;:::-;;:::i;286:157::-;;;;;;:::i;:::-;;:::i;718:98::-;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;450:96;;;:::i;961:91::-;;;:::i;822:132::-;940:6;897:50;;;;;;;;:::i;:::-;;;;;;;;;;;;;879:8;:69;;;;;;;;;;;;:::i;:::-;;822:132;:::o;552:159::-;693:10;638:66;;;;;;;;:::i;:::-;;;;;;;;;;;;;618:10;:87;;;;;;;;;;;;:::i;286:157::-;425:10;370:66;;;;;;;;:::i;:::-;;;;;;;;;;;;;351:9;:86;;;;;;;;;;;;:::i;718:98::-;767:13;800:10;793:17;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;718:98;:::o;450:96::-;498:13;531:9;524:16;;;;;:::i;961:91::-;1005:13;1038:8;1031:15;;;;;:::i;-1:-1:-1:-;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;14:922:1;83:6;136:2;124:9;115:7;111:23;107:32;104:52;;;152:1;149;142:12;104:52;192:9;179:23;221:18;262:2;254:6;251:14;248:34;;;278:1;275;268:12;248:34;316:6;305:9;301:22;291:32;;361:7;354:4;350:2;346:13;342:27;332:55;;383:1;380;373:12;332:55;419:2;406:16;441:2;437;434:10;431:36;;;447:18;;:::i;:::-;522:2;516:9;490:2;576:13;;-1:-1:-1;;572:22:1;;;596:2;568:31;564:40;552:53;;;620:18;;;640:22;;;617:46;614:72;;;666:18;;:::i;:::-;706:10;702:2;695:22;741:2;733:6;726:18;781:7;776:2;771;767;763:11;759:20;756:33;753:53;;;802:1;799;792:12;753:53;858:2;853;849;845:11;840:2;832:6;828:15;815:46;903:1;881:15;;;898:2;877:24;870:35;;;;-1:-1:-1;885:6:1;14:922;-1:-1:-1;;;;;14:922:1:o;941:485::-;1203:34;1198:3;1191:47;-1:-1:-1;;;1263:2:1;1258:3;1254:12;1247:27;1173:3;1303:6;1297:13;1319:60;1372:6;1367:2;1362:3;1358:12;1353:2;1345:6;1341:15;1319:60;:::i;:::-;1399:16;;;;1417:2;1395:25;;941:485;-1:-1:-1;;941:485:1:o;1431:441::-;-1:-1:-1;;;1688:3:1;1681:37;1663:3;1747:6;1741:13;1763:62;1818:6;1813:2;1808:3;1804:12;1797:4;1789:6;1785:17;1763:62;:::i;:::-;1845:16;;;;1863:2;1841:25;;1431:441;-1:-1:-1;;1431:441:1:o;1877:383::-;2026:2;2015:9;2008:21;1989:4;2058:6;2052:13;2101:6;2096:2;2085:9;2081:18;2074:34;2117:66;2176:6;2171:2;2160:9;2156:18;2151:2;2143:6;2139:15;2117:66;:::i;:::-;2244:2;2223:15;-1:-1:-1;;2219:29:1;2204:45;;;;2251:2;2200:54;;1877:383;-1:-1:-1;;1877:383:1:o;2265:258::-;2337:1;2347:113;2361:6;2358:1;2355:13;2347:113;;;2437:11;;;2431:18;2418:11;;;2411:39;2383:2;2376:10;2347:113;;;2478:6;2475:1;2472:13;2469:48;;;2513:1;2504:6;2499:3;2495:16;2488:27;2469:48;;2265:258;;;:::o;2528:380::-;2607:1;2603:12;;;;2650;;;2671:61;;2725:4;2717:6;2713:17;2703:27;;2671:61;2778:2;2770:6;2767:14;2747:18;2744:38;2741:161;;;2824:10;2819:3;2815:20;2812:1;2805:31;2859:4;2856:1;2849:15;2887:4;2884:1;2877:15;2741:161;;2528:380;;;:::o;2913:127::-;2974:10;2969:3;2965:20;2962:1;2955:31;3005:4;3002:1;2995:15;3029:4;3026:1;3019:15",
+    "sourcePath": "c:/Users/m/blockaudio/packages/hardhat/contracts/BlockAudio.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.7+commit.e28d00a7"
+    },
+    "ast": {
+        "absolutePath": "c:/Users/m/blockaudio/packages/hardhat/contracts/BlockAudio.sol",
+        "exportedSymbols": {
+            "BlockAudio": [
+                83
+            ]
+        },
+        "id": 84,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".7"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "67:23:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 83,
+                "linearizedBaseContracts": [
+                    83
+                ],
+                "name": "BlockAudio",
+                "nameLocation": "105:10:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 3,
+                        "mutability": "mutable",
+                        "name": "voicemail",
+                        "nameLocation": "128:9:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 83,
+                        "src": "121:16:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_string_storage",
+                            "typeString": "string"
+                        },
+                        "typeName": {
+                            "id": 2,
+                            "name": "string",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "121:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage_ptr",
+                                "typeString": "string"
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 5,
+                        "mutability": "mutable",
+                        "name": "voicemail1",
+                        "nameLocation": "149:10:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 83,
+                        "src": "142:17:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_string_storage",
+                            "typeString": "string"
+                        },
+                        "typeName": {
+                            "id": 4,
+                            "name": "string",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "142:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage_ptr",
+                                "typeString": "string"
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 7,
+                        "mutability": "mutable",
+                        "name": "mp3audio",
+                        "nameLocation": "171:8:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 83,
+                        "src": "164:15:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_string_storage",
+                            "typeString": "string"
+                        },
+                        "typeName": {
+                            "id": 6,
+                            "name": "string",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "164:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage_ptr",
+                                "typeString": "string"
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 23,
+                            "nodeType": "Block",
+                            "src": "344:99:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 21,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 12,
+                                            "name": "voicemail",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 3,
+                                            "src": "351:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage",
+                                                "typeString": "string storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "arguments": [
+                                                {
+                                                    "arguments": [
+                                                        {
+                                                            "hexValue": "646174613a617564696f2f7765626d3b636f646563733d6f7075733b6261736536342c",
+                                                            "id": 17,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": true,
+                                                            "kind": "string",
+                                                            "lValueRequested": false,
+                                                            "nodeType": "Literal",
+                                                            "src": "387:37:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_stringliteral_189c1bcbcddfaefdc783dc26c6b65cbc1d67ea0a1b0cb8f8126f9d879127294a",
+                                                                "typeString": "literal_string \"data:audio/webm;codecs=opus;base64,\""
+                                                            },
+                                                            "value": "data:audio/webm;codecs=opus;base64,"
+                                                        },
+                                                        {
+                                                            "id": 18,
+                                                            "name": "_voicemail",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 9,
+                                                            "src": "425:10:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_string_memory_ptr",
+                                                                "typeString": "string memory"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "expression": {
+                                                        "argumentTypes": [
+                                                            {
+                                                                "typeIdentifier": "t_stringliteral_189c1bcbcddfaefdc783dc26c6b65cbc1d67ea0a1b0cb8f8126f9d879127294a",
+                                                                "typeString": "literal_string \"data:audio/webm;codecs=opus;base64,\""
+                                                            },
+                                                            {
+                                                                "typeIdentifier": "t_string_memory_ptr",
+                                                                "typeString": "string memory"
+                                                            }
+                                                        ],
+                                                        "expression": {
+                                                            "id": 15,
+                                                            "name": "abi",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 4294967295,
+                                                            "src": "370:3:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_magic_abi",
+                                                                "typeString": "abi"
+                                                            }
+                                                        },
+                                                        "id": 16,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "lValueRequested": false,
+                                                        "memberName": "encodePacked",
+                                                        "nodeType": "MemberAccess",
+                                                        "src": "370:16:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                                            "typeString": "function () pure returns (bytes memory)"
+                                                        }
+                                                    },
+                                                    "id": 19,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "kind": "functionCall",
+                                                    "lValueRequested": false,
+                                                    "names": [],
+                                                    "nodeType": "FunctionCall",
+                                                    "src": "370:66:0",
+                                                    "tryCall": false,
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bytes_memory_ptr",
+                                                        "typeString": "bytes memory"
+                                                    }
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_bytes_memory_ptr",
+                                                        "typeString": "bytes memory"
+                                                    }
+                                                ],
+                                                "id": 14,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "lValueRequested": false,
+                                                "nodeType": "ElementaryTypeNameExpression",
+                                                "src": "363:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_string_storage_ptr_$",
+                                                    "typeString": "type(string storage pointer)"
+                                                },
+                                                "typeName": {
+                                                    "id": 13,
+                                                    "name": "string",
+                                                    "nodeType": "ElementaryTypeName",
+                                                    "src": "363:6:0",
+                                                    "typeDescriptions": {}
+                                                }
+                                            },
+                                            "id": 20,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "typeConversion",
+                                            "lValueRequested": false,
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "363:74:0",
+                                            "tryCall": false,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string memory"
+                                            }
+                                        },
+                                        "src": "351:86:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "id": 22,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "351:86:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "899fe70d",
+                        "id": 24,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "setAudioMessage",
+                        "nameLocation": "295:15:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 9,
+                                    "mutability": "mutable",
+                                    "name": "_voicemail",
+                                    "nameLocation": "325:10:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 24,
+                                    "src": "311:24:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 8,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "311:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "310:26:0"
+                        },
+                        "returnParameters": {
+                            "id": 11,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "344:0:0"
+                        },
+                        "scope": 83,
+                        "src": "286:157:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 31,
+                            "nodeType": "Block",
+                            "src": "513:33:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 29,
+                                        "name": "voicemail",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 3,
+                                        "src": "531:9:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "functionReturnParameters": 28,
+                                    "id": 30,
+                                    "nodeType": "Return",
+                                    "src": "524:16:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "b3c6821f",
+                        "id": 32,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "getAudioMessage",
+                        "nameLocation": "459:15:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 25,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "474:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 28,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 27,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 32,
+                                    "src": "498:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 26,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "498:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "497:15:0"
+                        },
+                        "scope": 83,
+                        "src": "450:96:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 48,
+                            "nodeType": "Block",
+                            "src": "611:100:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 46,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 37,
+                                            "name": "voicemail1",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 5,
+                                            "src": "618:10:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage",
+                                                "typeString": "string storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "arguments": [
+                                                {
+                                                    "arguments": [
+                                                        {
+                                                            "hexValue": "646174613a617564696f2f7765626d3b636f646563733d6f7075733b6261736536342c",
+                                                            "id": 42,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": true,
+                                                            "kind": "string",
+                                                            "lValueRequested": false,
+                                                            "nodeType": "Literal",
+                                                            "src": "655:37:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_stringliteral_189c1bcbcddfaefdc783dc26c6b65cbc1d67ea0a1b0cb8f8126f9d879127294a",
+                                                                "typeString": "literal_string \"data:audio/webm;codecs=opus;base64,\""
+                                                            },
+                                                            "value": "data:audio/webm;codecs=opus;base64,"
+                                                        },
+                                                        {
+                                                            "id": 43,
+                                                            "name": "_voicemail",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 34,
+                                                            "src": "693:10:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_string_memory_ptr",
+                                                                "typeString": "string memory"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "expression": {
+                                                        "argumentTypes": [
+                                                            {
+                                                                "typeIdentifier": "t_stringliteral_189c1bcbcddfaefdc783dc26c6b65cbc1d67ea0a1b0cb8f8126f9d879127294a",
+                                                                "typeString": "literal_string \"data:audio/webm;codecs=opus;base64,\""
+                                                            },
+                                                            {
+                                                                "typeIdentifier": "t_string_memory_ptr",
+                                                                "typeString": "string memory"
+                                                            }
+                                                        ],
+                                                        "expression": {
+                                                            "id": 40,
+                                                            "name": "abi",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 4294967295,
+                                                            "src": "638:3:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_magic_abi",
+                                                                "typeString": "abi"
+                                                            }
+                                                        },
+                                                        "id": 41,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "lValueRequested": false,
+                                                        "memberName": "encodePacked",
+                                                        "nodeType": "MemberAccess",
+                                                        "src": "638:16:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                                            "typeString": "function () pure returns (bytes memory)"
+                                                        }
+                                                    },
+                                                    "id": 44,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "kind": "functionCall",
+                                                    "lValueRequested": false,
+                                                    "names": [],
+                                                    "nodeType": "FunctionCall",
+                                                    "src": "638:66:0",
+                                                    "tryCall": false,
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bytes_memory_ptr",
+                                                        "typeString": "bytes memory"
+                                                    }
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_bytes_memory_ptr",
+                                                        "typeString": "bytes memory"
+                                                    }
+                                                ],
+                                                "id": 39,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "lValueRequested": false,
+                                                "nodeType": "ElementaryTypeNameExpression",
+                                                "src": "631:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_string_storage_ptr_$",
+                                                    "typeString": "type(string storage pointer)"
+                                                },
+                                                "typeName": {
+                                                    "id": 38,
+                                                    "name": "string",
+                                                    "nodeType": "ElementaryTypeName",
+                                                    "src": "631:6:0",
+                                                    "typeDescriptions": {}
+                                                }
+                                            },
+                                            "id": 45,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "typeConversion",
+                                            "lValueRequested": false,
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "631:74:0",
+                                            "tryCall": false,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string memory"
+                                            }
+                                        },
+                                        "src": "618:87:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "id": 47,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "618:87:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "471634ed",
+                        "id": 49,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "setAudioMessage1",
+                        "nameLocation": "561:16:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 35,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 34,
+                                    "mutability": "mutable",
+                                    "name": "_voicemail",
+                                    "nameLocation": "592:10:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 49,
+                                    "src": "578:24:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 33,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "578:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "577:26:0"
+                        },
+                        "returnParameters": {
+                            "id": 36,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "611:0:0"
+                        },
+                        "scope": 83,
+                        "src": "552:159:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 56,
+                            "nodeType": "Block",
+                            "src": "782:34:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 54,
+                                        "name": "voicemail1",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 5,
+                                        "src": "800:10:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "functionReturnParameters": 53,
+                                    "id": 55,
+                                    "nodeType": "Return",
+                                    "src": "793:17:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "9031f9d5",
+                        "id": 57,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "getAudioMessage1",
+                        "nameLocation": "727:16:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 50,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "743:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 53,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 52,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 57,
+                                    "src": "767:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 51,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "767:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "766:15:0"
+                        },
+                        "scope": 83,
+                        "src": "718:98:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 73,
+                            "nodeType": "Block",
+                            "src": "872:82:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 71,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 62,
+                                            "name": "mp3audio",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 7,
+                                            "src": "879:8:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage",
+                                                "typeString": "string storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "arguments": [
+                                                {
+                                                    "arguments": [
+                                                        {
+                                                            "hexValue": "646174613a617564696f2f6d70333b6261736536342c",
+                                                            "id": 67,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": true,
+                                                            "kind": "string",
+                                                            "lValueRequested": false,
+                                                            "nodeType": "Literal",
+                                                            "src": "914:24:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_stringliteral_b38b32b8107c8e582e833e514ec7bf9f0e1d4b633d4e1dde26b15b4c7a6e6cfc",
+                                                                "typeString": "literal_string \"data:audio/mp3;base64,\""
+                                                            },
+                                                            "value": "data:audio/mp3;base64,"
+                                                        },
+                                                        {
+                                                            "id": 68,
+                                                            "name": "_audio",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 59,
+                                                            "src": "940:6:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_string_memory_ptr",
+                                                                "typeString": "string memory"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "expression": {
+                                                        "argumentTypes": [
+                                                            {
+                                                                "typeIdentifier": "t_stringliteral_b38b32b8107c8e582e833e514ec7bf9f0e1d4b633d4e1dde26b15b4c7a6e6cfc",
+                                                                "typeString": "literal_string \"data:audio/mp3;base64,\""
+                                                            },
+                                                            {
+                                                                "typeIdentifier": "t_string_memory_ptr",
+                                                                "typeString": "string memory"
+                                                            }
+                                                        ],
+                                                        "expression": {
+                                                            "id": 65,
+                                                            "name": "abi",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 4294967295,
+                                                            "src": "897:3:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_magic_abi",
+                                                                "typeString": "abi"
+                                                            }
+                                                        },
+                                                        "id": 66,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "lValueRequested": false,
+                                                        "memberName": "encodePacked",
+                                                        "nodeType": "MemberAccess",
+                                                        "src": "897:16:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                                            "typeString": "function () pure returns (bytes memory)"
+                                                        }
+                                                    },
+                                                    "id": 69,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "kind": "functionCall",
+                                                    "lValueRequested": false,
+                                                    "names": [],
+                                                    "nodeType": "FunctionCall",
+                                                    "src": "897:50:0",
+                                                    "tryCall": false,
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bytes_memory_ptr",
+                                                        "typeString": "bytes memory"
+                                                    }
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_bytes_memory_ptr",
+                                                        "typeString": "bytes memory"
+                                                    }
+                                                ],
+                                                "id": 64,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "lValueRequested": false,
+                                                "nodeType": "ElementaryTypeNameExpression",
+                                                "src": "890:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_string_storage_ptr_$",
+                                                    "typeString": "type(string storage pointer)"
+                                                },
+                                                "typeName": {
+                                                    "id": 63,
+                                                    "name": "string",
+                                                    "nodeType": "ElementaryTypeName",
+                                                    "src": "890:6:0",
+                                                    "typeDescriptions": {}
+                                                }
+                                            },
+                                            "id": 70,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "typeConversion",
+                                            "lValueRequested": false,
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "890:58:0",
+                                            "tryCall": false,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string memory"
+                                            }
+                                        },
+                                        "src": "879:69:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "id": 72,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "879:69:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "288dca9d",
+                        "id": 74,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "setMp3Audio",
+                        "nameLocation": "831:11:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 60,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 59,
+                                    "mutability": "mutable",
+                                    "name": "_audio",
+                                    "nameLocation": "857:6:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 74,
+                                    "src": "843:20:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 58,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "843:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "842:22:0"
+                        },
+                        "returnParameters": {
+                            "id": 61,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "872:0:0"
+                        },
+                        "scope": 83,
+                        "src": "822:132:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 81,
+                            "nodeType": "Block",
+                            "src": "1020:32:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 79,
+                                        "name": "mp3audio",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 7,
+                                        "src": "1038:8:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "functionReturnParameters": 78,
+                                    "id": 80,
+                                    "nodeType": "Return",
+                                    "src": "1031:15:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "c5112994",
+                        "id": 82,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "getMp3Audio",
+                        "nameLocation": "970:11:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 75,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "981:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 78,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 77,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 82,
+                                    "src": "1005:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 76,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1005:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1004:15:0"
+                        },
+                        "scope": 83,
+                        "src": "961:91:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 84,
+                "src": "96:961:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "67:994:0"
+    },
+    "functionHashes": {
+        "getAudioMessage()": "b3c6821f",
+        "getAudioMessage1()": "9031f9d5",
+        "getMp3Audio()": "c5112994",
+        "setAudioMessage(string)": "899fe70d",
+        "setAudioMessage1(string)": "471634ed",
+        "setMp3Audio(string)": "288dca9d"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "250800",
+            "executionCost": "294",
+            "totalCost": "251094"
+        },
+        "external": {
+            "getAudioMessage()": "infinite",
+            "getAudioMessage1()": "infinite",
+            "getMp3Audio()": "infinite",
+            "setAudioMessage(string)": "infinite",
+            "setAudioMessage1(string)": "infinite",
+            "setMp3Audio(string)": "infinite"
+        }
+    }
+}
