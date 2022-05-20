@@ -8,7 +8,7 @@ These should play in most broswers and without connecting your wallet.
 
 The data is stored on the blockchain.  Anyone can play the video and audio in their app/site for free.
 
-![piano](https://user-images.githubusercontent.com/75052782/168682799-b3f65571-8483-46eb-909c-b2b712237616.png)
+![video2](https://user-images.githubusercontent.com/75052782/169445626-164f8982-f742-49fd-a7fd-7aa4de3088ee.png)
 
 
 ### Installation
