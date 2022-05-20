@@ -1,15 +1,11 @@
-# 🏗 scaffold-eth - Composable SVG NFT
+# 🏗 scaffold-eth - Blockchain Studio
 
-> Demonstration showing how SVG NFTs can be composed on top of each other.
+> Demonstration showing how the blockchain can play video and audio.
 
-
-## Prerequisites
-
-This branch is an extension of [loogie-svg-nft](https://github.com/scaffold-eth/scaffold-eth/tree/loogies-svg-nft) branch. Watch its [demo](https://www.youtube.com/watch?v=m0bwE5UelEo) to understand more about it.
 
 ## Introduction
 
-This branch shows how to set up an SVG NFT contract so that other NFTs can use it in their SVG code. This leads to an easy composition of SVG NFTs.
+This 
 
 This demo defines two SVG NFTs:
 1. **Loogies**: They look like this:
